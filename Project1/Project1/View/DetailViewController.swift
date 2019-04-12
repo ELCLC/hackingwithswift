@@ -8,19 +8,25 @@
 
 import UIKit
 
+protocol DetailViewProtocol: class {
+    func set(largeTitleDisplayMode: LargeTitleDisplayMode)
+    func set(imageName: String)
+}
+
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var image: UIImageView!
+    
+    var presenter: DetailViewPresenter!
+    var router: DetailViewRouter!
+    
     var selectedImage: String?
     var detailTitle: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let selectedImage = selectedImage {
-            image.image = UIImage(named: selectedImage)
-            title = detailTitle ?? selectedImage
-        }
-        navigationItem.largeTitleDisplayMode = .never
+        
+        presenter.viewReady()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,14 +38,15 @@ class DetailViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.hidesBarsOnTap = false
     }
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension DetailViewController: DetailViewProtocol {
+    func set(largeTitleDisplayMode: LargeTitleDisplayMode) {
+        self.navigationItem.largeTitleDisplayMode = UINavigationItem.LargeTitleDisplayMode(rawValue: largeTitleDisplayMode.rawValue)!
     }
-    */
-
+    
+    func set(imageName: String) {
+        image.image = UIImage(named: imageName)
+        title = detailTitle ?? selectedImage
+    }
 }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F9B7E3592260E5A100F94286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E3582260E5A100F94286 /* AppDelegate.swift */; };
-		F9B7E35B2260E5A100F94286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E35A2260E5A100F94286 /* ViewController.swift */; };
+		F9B7E35B2260E5A100F94286 /* StormViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E35A2260E5A100F94286 /* StormViewerViewController.swift */; };
 		F9B7E35E2260E5A100F94286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B7E35C2260E5A100F94286 /* Main.storyboard */; };
 		F9B7E3602260E5A300F94286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B7E35F2260E5A300F94286 /* Assets.xcassets */; };
 		F9B7E3632260E5A300F94286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B7E3612260E5A300F94286 /* LaunchScreen.storyboard */; };
@@ -23,12 +23,18 @@
 		F9B7E37D2260E63200F94286 /* nssl0033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9B7E3732260E63200F94286 /* nssl0033.jpg */; };
 		F9B7E37E2260E63200F94286 /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9B7E3742260E63200F94286 /* nssl0034.jpg */; };
 		F9B7E3802260EB7700F94286 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E37F2260EB7700F94286 /* DetailViewController.swift */; };
+		F9B7E3832260F1FE00F94286 /* StormViewerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E3822260F1FE00F94286 /* StormViewerImage.swift */; };
+		F9B7E3862260F22900F94286 /* StormViewerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E3852260F22900F94286 /* StormViewerInteractor.swift */; };
+		F9B7E3892260F2FA00F94286 /* StormViewerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E3882260F2FA00F94286 /* StormViewerPresenter.swift */; };
+		F9B7E38C2260F4C600F94286 /* StormViewerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E38B2260F4C600F94286 /* StormViewerRouter.swift */; };
+		F9B7E38F2260FA0B00F94286 /* DetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E38E2260FA0B00F94286 /* DetailViewRouter.swift */; };
+		F9B7E3912260FA5100F94286 /* DetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E3902260FA5100F94286 /* DetailViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F9B7E3552260E5A100F94286 /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B7E3582260E5A100F94286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9B7E35A2260E5A100F94286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9B7E35A2260E5A100F94286 /* StormViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerViewController.swift; sourceTree = "<group>"; };
 		F9B7E35D2260E5A100F94286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9B7E35F2260E5A300F94286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9B7E3622260E5A300F94286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +50,12 @@
 		F9B7E3732260E63200F94286 /* nssl0033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0033.jpg; sourceTree = "<group>"; };
 		F9B7E3742260E63200F94286 /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		F9B7E37F2260EB7700F94286 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F9B7E3822260F1FE00F94286 /* StormViewerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerImage.swift; sourceTree = "<group>"; };
+		F9B7E3852260F22900F94286 /* StormViewerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerInteractor.swift; sourceTree = "<group>"; };
+		F9B7E3882260F2FA00F94286 /* StormViewerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerPresenter.swift; sourceTree = "<group>"; };
+		F9B7E38B2260F4C600F94286 /* StormViewerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerRouter.swift; sourceTree = "<group>"; };
+		F9B7E38E2260FA0B00F94286 /* DetailViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewRouter.swift; sourceTree = "<group>"; };
+		F9B7E3902260FA5100F94286 /* DetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +88,12 @@
 		F9B7E3572260E5A100F94286 /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
+				F9B7E38D2260F67000F94286 /* View */,
+				F9B7E38A2260F4B500F94286 /* Router */,
+				F9B7E3872260F2EE00F94286 /* Presenter */,
+				F9B7E3842260F21B00F94286 /* Interactor */,
+				F9B7E3812260F1E100F94286 /* Entity */,
 				F9B7E3582260E5A100F94286 /* AppDelegate.swift */,
-				F9B7E35A2260E5A100F94286 /* ViewController.swift */,
-				F9B7E37F2260EB7700F94286 /* DetailViewController.swift */,
 				F9B7E35C2260E5A100F94286 /* Main.storyboard */,
 				F9B7E35F2260E5A300F94286 /* Assets.xcassets */,
 				F9B7E3612260E5A300F94286 /* LaunchScreen.storyboard */,
@@ -103,6 +118,49 @@
 				F9B7E3742260E63200F94286 /* nssl0034.jpg */,
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		F9B7E3812260F1E100F94286 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F9B7E3822260F1FE00F94286 /* StormViewerImage.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F9B7E3842260F21B00F94286 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F9B7E3852260F22900F94286 /* StormViewerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F9B7E3872260F2EE00F94286 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F9B7E3882260F2FA00F94286 /* StormViewerPresenter.swift */,
+				F9B7E3902260FA5100F94286 /* DetailViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F9B7E38A2260F4B500F94286 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F9B7E38B2260F4C600F94286 /* StormViewerRouter.swift */,
+				F9B7E38E2260FA0B00F94286 /* DetailViewRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F9B7E38D2260F67000F94286 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9B7E35A2260E5A100F94286 /* StormViewerViewController.swift */,
+				F9B7E37F2260EB7700F94286 /* DetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,9 +244,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B7E38F2260FA0B00F94286 /* DetailViewRouter.swift in Sources */,
+				F9B7E3892260F2FA00F94286 /* StormViewerPresenter.swift in Sources */,
 				F9B7E3802260EB7700F94286 /* DetailViewController.swift in Sources */,
-				F9B7E35B2260E5A100F94286 /* ViewController.swift in Sources */,
+				F9B7E3862260F22900F94286 /* StormViewerInteractor.swift in Sources */,
+				F9B7E3912260FA5100F94286 /* DetailViewPresenter.swift in Sources */,
+				F9B7E35B2260E5A100F94286 /* StormViewerViewController.swift in Sources */,
+				F9B7E38C2260F4C600F94286 /* StormViewerRouter.swift in Sources */,
 				F9B7E3592260E5A100F94286 /* AppDelegate.swift in Sources */,
+				F9B7E3832260F1FE00F94286 /* StormViewerImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
