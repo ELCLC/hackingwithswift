@@ -14,11 +14,11 @@ enum LargeTitleDisplayMode: Int {
 class DetailViewPresenter {
     
     weak var view: DetailViewProtocol!
-    let interactor: StormViewerInteractor!
+    let interactor: StormViewerInteractorProtocol!
     let selectedImage: StormViewerImage?
     let imageCount: Int
     
-    init(interactor: StormViewerInteractor, id: Int) {
+    init(interactor: StormViewerInteractorProtocol, id: Int) {
         self.interactor = interactor
         selectedImage = interactor.getImage(id: id)
         imageCount = interactor.getImages().count

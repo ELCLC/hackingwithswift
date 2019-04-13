@@ -10,9 +10,9 @@ import UIKit
 
 class StormViewerRouter {
     
-    let interactor: StormViewerInteractor!
+    let interactor: StormViewerInteractorProtocol!
     
-    init(interactor: StormViewerInteractor) {
+    init(interactor: StormViewerInteractorProtocol) {
         self.interactor = interactor
     }
     

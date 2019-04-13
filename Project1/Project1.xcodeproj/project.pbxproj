@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		644B1F0C2261F86B000C6985 /* StormViewerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644B1F0B2261F86B000C6985 /* StormViewerViewControllerTests.swift */; };
+		644B1F49226201D5000C6985 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644B1F48226201D5000C6985 /* DetailViewControllerTests.swift */; };
+		644B1F4C2262028C000C6985 /* Project1TestMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644B1F4B2262028C000C6985 /* Project1TestMocks.swift */; };
+		64F1C67722620B69006EC9A8 /* StormViewerRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1C67622620B69006EC9A8 /* StormViewerRouterTests.swift */; };
+		64F1C67922620BC9006EC9A8 /* DetailViewRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1C67822620BC9006EC9A8 /* DetailViewRouterTests.swift */; };
+		64F1C67C22620C68006EC9A8 /* StormViewerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1C67B22620C68006EC9A8 /* StormViewerPresenterTests.swift */; };
+		64F1C67E22620DED006EC9A8 /* DetailViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1C67D22620DED006EC9A8 /* DetailViewPresenterTests.swift */; };
+		64F1C68122620FF1006EC9A8 /* StormViewerInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1C68022620FF1006EC9A8 /* StormViewerInteractorTests.swift */; };
 		F9B7E3592260E5A100F94286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E3582260E5A100F94286 /* AppDelegate.swift */; };
 		F9B7E35B2260E5A100F94286 /* StormViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E35A2260E5A100F94286 /* StormViewerViewController.swift */; };
 		F9B7E35E2260E5A100F94286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B7E35C2260E5A100F94286 /* Main.storyboard */; };
@@ -31,7 +39,27 @@
 		F9B7E3912260FA5100F94286 /* DetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7E3902260FA5100F94286 /* DetailViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		644B1F062261F856000C6985 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9B7E34D2260E5A100F94286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9B7E3542260E5A100F94286;
+			remoteInfo = Project1;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		644B1F012261F856000C6985 /* Project1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		644B1F052261F856000C6985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		644B1F0B2261F86B000C6985 /* StormViewerViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StormViewerViewControllerTests.swift; sourceTree = "<group>"; };
+		644B1F48226201D5000C6985 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		644B1F4B2262028C000C6985 /* Project1TestMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project1TestMocks.swift; sourceTree = "<group>"; };
+		64F1C67622620B69006EC9A8 /* StormViewerRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerRouterTests.swift; sourceTree = "<group>"; };
+		64F1C67822620BC9006EC9A8 /* DetailViewRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewRouterTests.swift; sourceTree = "<group>"; };
+		64F1C67B22620C68006EC9A8 /* StormViewerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerPresenterTests.swift; sourceTree = "<group>"; };
+		64F1C67D22620DED006EC9A8 /* DetailViewPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewPresenterTests.swift; sourceTree = "<group>"; };
+		64F1C68022620FF1006EC9A8 /* StormViewerInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerInteractorTests.swift; sourceTree = "<group>"; };
 		F9B7E3552260E5A100F94286 /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B7E3582260E5A100F94286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9B7E35A2260E5A100F94286 /* StormViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormViewerViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +87,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		644B1EFE2261F856000C6985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F9B7E3522260E5A100F94286 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,10 +104,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		644B1F022261F856000C6985 /* Project1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				644B1F47226201BB000C6985 /* View */,
+				644B1F4D2262042D000C6985 /* Router */,
+				64F1C67A22620C5B006EC9A8 /* Presenter */,
+				64F1C67F22620FE3006EC9A8 /* Interactor */,
+				644B1F4A22620280000C6985 /* Mocks */,
+				644B1F052261F856000C6985 /* Info.plist */,
+			);
+			path = Project1Tests;
+			sourceTree = "<group>";
+		};
+		644B1F47226201BB000C6985 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				644B1F0B2261F86B000C6985 /* StormViewerViewControllerTests.swift */,
+				644B1F48226201D5000C6985 /* DetailViewControllerTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		644B1F4A22620280000C6985 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				644B1F4B2262028C000C6985 /* Project1TestMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		644B1F4D2262042D000C6985 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				64F1C67622620B69006EC9A8 /* StormViewerRouterTests.swift */,
+				64F1C67822620BC9006EC9A8 /* DetailViewRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		64F1C67A22620C5B006EC9A8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				64F1C67B22620C68006EC9A8 /* StormViewerPresenterTests.swift */,
+				64F1C67D22620DED006EC9A8 /* DetailViewPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		64F1C67F22620FE3006EC9A8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				64F1C68022620FF1006EC9A8 /* StormViewerInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		F9B7E34C2260E5A100F94286 = {
 			isa = PBXGroup;
 			children = (
 				F9B7E3572260E5A100F94286 /* Project1 */,
+				644B1F022261F856000C6985 /* Project1Tests */,
 				F9B7E3562260E5A100F94286 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				F9B7E3552260E5A100F94286 /* Project1.app */,
+				644B1F012261F856000C6985 /* Project1Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +259,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		644B1F002261F856000C6985 /* Project1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 644B1F082261F856000C6985 /* Build configuration list for PBXNativeTarget "Project1Tests" */;
+			buildPhases = (
+				644B1EFD2261F856000C6985 /* Sources */,
+				644B1EFE2261F856000C6985 /* Frameworks */,
+				644B1EFF2261F856000C6985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				644B1F072261F856000C6985 /* PBXTargetDependency */,
+			);
+			name = Project1Tests;
+			productName = Project1Tests;
+			productReference = 644B1F012261F856000C6985 /* Project1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F9B7E3542260E5A100F94286 /* Project1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9B7E3672260E5A300F94286 /* Build configuration list for PBXNativeTarget "Project1" */;
@@ -189,10 +300,14 @@
 		F9B7E34D2260E5A100F94286 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Emma Lee-Choon";
 				TargetAttributes = {
+					644B1F002261F856000C6985 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = F9B7E3542260E5A100F94286;
+					};
 					F9B7E3542260E5A100F94286 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
@@ -213,11 +328,19 @@
 			projectRoot = "";
 			targets = (
 				F9B7E3542260E5A100F94286 /* Project1 */,
+				644B1F002261F856000C6985 /* Project1Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		644B1EFF2261F856000C6985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F9B7E3532260E5A100F94286 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +364,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		644B1EFD2261F856000C6985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64F1C68122620FF1006EC9A8 /* StormViewerInteractorTests.swift in Sources */,
+				644B1F0C2261F86B000C6985 /* StormViewerViewControllerTests.swift in Sources */,
+				644B1F4C2262028C000C6985 /* Project1TestMocks.swift in Sources */,
+				64F1C67722620B69006EC9A8 /* StormViewerRouterTests.swift in Sources */,
+				644B1F49226201D5000C6985 /* DetailViewControllerTests.swift in Sources */,
+				64F1C67E22620DED006EC9A8 /* DetailViewPresenterTests.swift in Sources */,
+				64F1C67C22620C68006EC9A8 /* StormViewerPresenterTests.swift in Sources */,
+				64F1C67922620BC9006EC9A8 /* DetailViewRouterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F9B7E3512260E5A100F94286 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +396,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		644B1F072261F856000C6985 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9B7E3542260E5A100F94286 /* Project1 */;
+			targetProxy = 644B1F062261F856000C6985 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F9B7E35C2260E5A100F94286 /* Main.storyboard */ = {
@@ -279,6 +425,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		644B1F092261F856000C6985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUKUME7KXF;
+				INFOPLIST_FILE = Project1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmaleechoon.test.Project1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project1.app/Project1";
+			};
+			name = Debug;
+		};
+		644B1F0A2261F856000C6985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUKUME7KXF;
+				INFOPLIST_FILE = Project1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmaleechoon.test.Project1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project1.app/Project1";
+			};
+			name = Release;
+		};
 		F9B7E3652260E5A300F94286 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -400,7 +588,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GY99AR268R;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Project1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -418,7 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GY99AR268R;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Project1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -434,6 +622,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		644B1F082261F856000C6985 /* Build configuration list for PBXNativeTarget "Project1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				644B1F092261F856000C6985 /* Debug */,
+				644B1F0A2261F856000C6985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F9B7E3502260E5A100F94286 /* Build configuration list for PBXProject "Project1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
