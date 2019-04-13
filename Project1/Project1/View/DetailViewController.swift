@@ -10,7 +10,8 @@ import UIKit
 
 protocol DetailViewProtocol: class {
     func set(largeTitleDisplayMode: LargeTitleDisplayMode)
-    func set(imageName: String)
+    func set(image: String)
+    func set(title: String)
 }
 
 class DetailViewController: UIViewController {
@@ -19,9 +20,6 @@ class DetailViewController: UIViewController {
     
     var presenter: DetailViewPresenter!
     var router: DetailViewRouter!
-    
-    var selectedImage: String?
-    var detailTitle: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +43,11 @@ extension DetailViewController: DetailViewProtocol {
         self.navigationItem.largeTitleDisplayMode = UINavigationItem.LargeTitleDisplayMode(rawValue: largeTitleDisplayMode.rawValue)!
     }
     
-    func set(imageName: String) {
-        image.image = UIImage(named: imageName)
-        title = detailTitle ?? selectedImage
+    func set(image: String) {
+        self.image.image = UIImage(named: image)
+    }
+    
+    func set(title: String) {
+        self.title = title
     }
 }

@@ -16,16 +16,19 @@ class DetailViewPresenter {
     weak var view: DetailViewProtocol!
     let interactor: StormViewerInteractor!
     let selectedImage: StormViewerImage?
+    let imageCount: Int
     
     init(interactor: StormViewerInteractor, id: Int) {
         self.interactor = interactor
         selectedImage = interactor.getImage(id: id)
+        imageCount = interactor.getImages().count
     }
     
     func viewReady() {
         view.set(largeTitleDisplayMode: LargeTitleDisplayMode.never)
         if let image = selectedImage {
-            view.set(imageName: image.imageName)
+            view.set(image: image.imageName)
+            view.set(title: "Image \(image.id + 1) of \(imageCount)")
         }
     }
 }
