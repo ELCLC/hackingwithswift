@@ -12,7 +12,13 @@
 		643C79452262131700B46EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643C79432262131700B46EA2 /* Main.storyboard */; };
 		643C79472262131800B46EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643C79462262131800B46EA2 /* Assets.xcassets */; };
 		643C794A2262131800B46EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643C79482262131800B46EA2 /* LaunchScreen.storyboard */; };
-		643C79552262131800B46EA2 /* Project2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C79542262131800B46EA2 /* Project2Tests.swift */; };
+		643C79552262131800B46EA2 /* FlagRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C79542262131800B46EA2 /* FlagRouterTests.swift */; };
+		643C79702263BD4700B46EA2 /* FlagInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C796F2263BD4700B46EA2 /* FlagInteractor.swift */; };
+		643C79732263BDAD00B46EA2 /* FlagPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C79722263BDAD00B46EA2 /* FlagPresenter.swift */; };
+		643C79772263BE2F00B46EA2 /* FlagRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C79762263BE2F00B46EA2 /* FlagRouter.swift */; };
+		643C797B2263C4FD00B46EA2 /* Project2Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C797A2263C4FD00B46EA2 /* Project2Mocks.swift */; };
+		643C797E2263C56500B46EA2 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C797D2263C56500B46EA2 /* ViewControllerTests.swift */; };
+		643C79812263C95A00B46EA2 /* FlagPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C79802263C95A00B46EA2 /* FlagPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +40,14 @@
 		643C79492262131800B46EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		643C794B2262131800B46EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		643C79502262131800B46EA2 /* Project2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		643C79542262131800B46EA2 /* Project2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project2Tests.swift; sourceTree = "<group>"; };
+		643C79542262131800B46EA2 /* FlagRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagRouterTests.swift; sourceTree = "<group>"; };
 		643C79562262131800B46EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643C796F2263BD4700B46EA2 /* FlagInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagInteractor.swift; sourceTree = "<group>"; };
+		643C79722263BDAD00B46EA2 /* FlagPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagPresenter.swift; sourceTree = "<group>"; };
+		643C79762263BE2F00B46EA2 /* FlagRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagRouter.swift; sourceTree = "<group>"; };
+		643C797A2263C4FD00B46EA2 /* Project2Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project2Mocks.swift; sourceTree = "<group>"; };
+		643C797D2263C56500B46EA2 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		643C79802263C95A00B46EA2 /* FlagPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +89,12 @@
 		643C793E2262131700B46EA2 /* Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				643C79752263BE2400B46EA2 /* Router */,
+				643C79742263BE1E00B46EA2 /* View */,
+				643C79712263BDA300B46EA2 /* Presenter */,
+				643C796E2263BD1A00B46EA2 /* Interactor */,
+				643C796D2263BCD200B46EA2 /* Entity */,
 				643C793F2262131700B46EA2 /* AppDelegate.swift */,
-				643C79412262131700B46EA2 /* ViewController.swift */,
 				643C79432262131700B46EA2 /* Main.storyboard */,
 				643C79462262131800B46EA2 /* Assets.xcassets */,
 				643C79482262131800B46EA2 /* LaunchScreen.storyboard */,
@@ -90,10 +106,84 @@
 		643C79532262131800B46EA2 /* Project2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				643C79542262131800B46EA2 /* Project2Tests.swift */,
+				643C797F2263C94E00B46EA2 /* Presenter */,
+				643C797C2263C55800B46EA2 /* View */,
+				643C79792263C4F000B46EA2 /* Mocks */,
+				643C79782263C49600B46EA2 /* Router */,
 				643C79562262131800B46EA2 /* Info.plist */,
 			);
 			path = Project2Tests;
+			sourceTree = "<group>";
+		};
+		643C796D2263BCD200B46EA2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		643C796E2263BD1A00B46EA2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				643C796F2263BD4700B46EA2 /* FlagInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		643C79712263BDA300B46EA2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				643C79722263BDAD00B46EA2 /* FlagPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		643C79742263BE1E00B46EA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				643C79412262131700B46EA2 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		643C79752263BE2400B46EA2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				643C79762263BE2F00B46EA2 /* FlagRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		643C79782263C49600B46EA2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				643C79542262131800B46EA2 /* FlagRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		643C79792263C4F000B46EA2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				643C797A2263C4FD00B46EA2 /* Project2Mocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		643C797C2263C55800B46EA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				643C797D2263C56500B46EA2 /* ViewControllerTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		643C797F2263C94E00B46EA2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				643C79802263C95A00B46EA2 /* FlagPresenterTests.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643C79732263BDAD00B46EA2 /* FlagPresenter.swift in Sources */,
 				643C79422262131700B46EA2 /* ViewController.swift in Sources */,
 				643C79402262131700B46EA2 /* AppDelegate.swift in Sources */,
+				643C79772263BE2F00B46EA2 /* FlagRouter.swift in Sources */,
+				643C79702263BD4700B46EA2 /* FlagInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				643C79552262131800B46EA2 /* Project2Tests.swift in Sources */,
+				643C79812263C95A00B46EA2 /* FlagPresenterTests.swift in Sources */,
+				643C797E2263C56500B46EA2 /* ViewControllerTests.swift in Sources */,
+				643C797B2263C4FD00B46EA2 /* Project2Mocks.swift in Sources */,
+				643C79552262131800B46EA2 /* FlagRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
