@@ -33,6 +33,8 @@ class DetailViewPresenter {
     }
     
     func shareTapped() {
-        view?.showShareOptions()
+        if let image = selectedImage {
+            view?.showShareOptions(imageTitle: image.imageName)
+        }
     }
 }

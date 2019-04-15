@@ -12,7 +12,7 @@ protocol DetailViewProtocol: class {
     func set(largeTitleDisplayMode: LargeTitleDisplayMode)
     func set(image: String)
     func set(title: String)
-    func showShareOptions()
+    func showShareOptions(imageTitle: String)
 }
 
 class DetailViewController: UIViewController {
@@ -57,13 +57,13 @@ extension DetailViewController: DetailViewProtocol {
         self.title = title
     }
     
-    func showShareOptions() {
+    func showShareOptions(imageTitle: String) {
         guard let image = image.image?.jpegData(compressionQuality: 0.8) else {
             print("No image found")
             return
         }
         
-        let vc = UIActivityViewController(activityItems: [image], applicationActivities: [])
+        let vc = UIActivityViewController(activityItems: [image, imageTitle], applicationActivities: [])
         vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
         present(vc, animated: true)
     }

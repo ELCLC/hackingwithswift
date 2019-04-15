@@ -96,6 +96,7 @@ class MockStormViewerViewProtocol: StormViewerViewProtocol {
 }
 
 class MockDetailViewProtocol: DetailViewProtocol {
+   
     var setLargeTitleDisplayModeCalled = false
     var setImageCalled = false
     var setTitleCalled = false
@@ -113,7 +114,7 @@ class MockDetailViewProtocol: DetailViewProtocol {
         setTitleCalled = true
     }
     
-    func showShareOptions() {
+    func showShareOptions(imageTitle: String) {
         showShareOptionsCalled = true
     }
 }
