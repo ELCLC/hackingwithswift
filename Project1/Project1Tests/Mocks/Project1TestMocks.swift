@@ -34,6 +34,7 @@ class MockStormViewerPresenter: StormViewerPresenter {
     var numberOfRowsCalled = false
     var textAtRowCalled = false
     var didSelectRowCalled = false
+    var recommendTappedCalled = false
     
     override func numberOfRows() -> Int {
         numberOfRowsCalled = true
@@ -47,6 +48,10 @@ class MockStormViewerPresenter: StormViewerPresenter {
     
     override func didSelect(row: Int) {
         didSelectRowCalled = true
+    }
+    
+    override func recommendTapped() {
+        recommendTappedCalled = true
     }
 }
 
@@ -78,9 +83,11 @@ class MockStormViewerRouter: StormViewerRouter {
 }
 
 class MockStormViewerViewProtocol: StormViewerViewProtocol {
+    
     var setLargeTitlesCalled = false
     var setTitleCalled = false
     var navigateToDetailCalled = false
+    var showRecommendOptionsCalled = false
     
     func set(largeTitles: Bool) {
         setLargeTitlesCalled = true
@@ -92,6 +99,10 @@ class MockStormViewerViewProtocol: StormViewerViewProtocol {
     
     func navigateToDetail() {
         navigateToDetailCalled = true
+    }
+    
+    func showRecommendOptions(message: String) {
+        showRecommendOptionsCalled = true
     }
 }
 

@@ -35,4 +35,8 @@ class StormViewerPresenter {
         selectedId = row
         view?.navigateToDetail()
     }
+    
+    func recommendTapped() {
+        view?.showRecommendOptions(message: "There's a great app called Project1!")
+    }
 }

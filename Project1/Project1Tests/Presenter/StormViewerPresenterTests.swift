@@ -47,4 +47,8 @@ class StormViewerPresenterTests: XCTestCase {
         XCTAssertTrue(mockViewProtocol.navigateToDetailCalled)
     }
 
+    func testStormViewerPresenter_recommendTapped_callsView() {
+        stormViewerPresenter.recommendTapped()
+        XCTAssertTrue(mockViewProtocol.showRecommendOptionsCalled)
+    }
 }

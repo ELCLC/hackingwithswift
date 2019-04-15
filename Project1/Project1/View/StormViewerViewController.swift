@@ -12,12 +12,14 @@ protocol StormViewerViewProtocol: class {
     func set(largeTitles: Bool)
     func set(title: String)
     func navigateToDetail()
+    func showRecommendOptions(message: String)
 }
 
 class StormViewerViewController: UITableViewController {
 
     var presenter: StormViewerPresenter!
     var router: StormViewerRouter!
+    @IBOutlet weak var recommendButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +51,10 @@ class StormViewerViewController: UITableViewController {
             fatalError()
         }
     }
+    
+    @IBAction func recommendTapped(_ sender: Any) {
+        presenter.recommendTapped()
+    }
 }
 
 extension StormViewerViewController: StormViewerViewProtocol {
@@ -62,5 +68,11 @@ extension StormViewerViewController: StormViewerViewProtocol {
     
     func navigateToDetail() {
         performSegue(withIdentifier: "PresentDetail", sender: nil)
+    }
+    
+    func showRecommendOptions(message: String) {
+        let activityViewController = UIActivityViewController(activityItems: [message], applicationActivities: [])
+        activityViewController.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(activityViewController, animated: true)
     }
 }

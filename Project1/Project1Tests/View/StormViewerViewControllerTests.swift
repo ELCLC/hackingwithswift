@@ -36,27 +36,27 @@ class StormViewerViewControllerTests: XCTestCase {
         mockPresenter = nil
     }
     
-    func testStormViewerVC_numberOfRows_CallsPresenter() {
+    func testStormViewerVC_numberOfRows_callsPresenter() {
         let resultNumber = stormViewerViewController.tableView(mockTableView, numberOfRowsInSection: 0)
         
         XCTAssertTrue(mockPresenter.numberOfRowsCalled)
         XCTAssertTrue(resultNumber == 1)
     }
     
-    func testStormViewerVC_cellForRow_CallsPresenter() {
+    func testStormViewerVC_cellForRow_callsPresenter() {
         let resultCell = stormViewerViewController.tableView(mockTableView, cellForRowAt: IndexPath(row: 0, section: 0))
         
         XCTAssertTrue(mockPresenter.textAtRowCalled)
         XCTAssertTrue(resultCell.textLabel?.text == "Test")
     }
     
-    func testStormViewerVC_didSelectRow_CallsPresenter() {
+    func testStormViewerVC_didSelectRow_callsPresenter() {
         stormViewerViewController.tableView(mockTableView, didSelectRowAt: IndexPath(row: 0, section: 0))
         
         XCTAssertTrue(mockPresenter.didSelectRowCalled)
     }
     
-    func testStormViewerVC_prepareForSegue_PresenterSelectedIdNotNil_CallsRouter() {
+    func testStormViewerVC_prepareForSegue_presenterSelectedIdNotNil_CallsRouter() {
         mockPresenter.selectedId = 10
         
         stormViewerViewController.prepare(for: MockSegue(identifier: "PresentDetail", source: stormViewerViewController, destination: mockDetailViewController), sender: nil)
@@ -64,9 +64,14 @@ class StormViewerViewControllerTests: XCTestCase {
         XCTAssertTrue(mockRouter.configureDetailCalled)
     }
     
-    func testStormViewerVC_prepareForSegue_PresenterSelectedIdNil_RouterNotCalled() {
+    func testStormViewerVC_prepareForSegue_presenterSelectedIdNil_RouterNotCalled() {
         stormViewerViewController.prepare(for: MockSegue(identifier: "PresentDetail", source: stormViewerViewController, destination: mockDetailViewController), sender: nil)
         
         XCTAssertFalse(mockRouter.configureDetailCalled)
+    }
+    
+    func testStormViewerVC_recommendTapped_callsPresenter() {
+        stormViewerViewController.recommendTapped(stormViewerViewController.recommendButton)
+        XCTAssertTrue(mockPresenter.recommendTappedCalled)
     }
 }

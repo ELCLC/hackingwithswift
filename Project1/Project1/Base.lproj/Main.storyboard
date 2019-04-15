@@ -42,8 +42,15 @@
                             <outlet property="delegate" destination="Fho-zD-y94" id="Nsi-Ss-CRs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="J2T-de-ObG"/>
+                    <navigationItem key="navigationItem" id="J2T-de-ObG">
+                        <barButtonItem key="rightBarButtonItem" title="Recommend" id="Rcc-DV-Wsm">
+                            <connections>
+                                <action selector="recommendTapped:" destination="Fho-zD-y94" id="WTQ-hY-q7X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="recommendButton" destination="Rcc-DV-Wsm" id="oe5-Zj-gWY"/>
                         <segue destination="cXh-Be-aAT" kind="show" identifier="PresentDetail" id="f3e-Ds-BjL"/>
                     </connections>
                 </tableViewController>
