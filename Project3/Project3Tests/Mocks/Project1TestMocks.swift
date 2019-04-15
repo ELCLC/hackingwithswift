@@ -96,12 +96,13 @@ class MockStormViewerViewProtocol: StormViewerViewProtocol {
 }
 
 class MockDetailViewProtocol: DetailViewProtocol {
-    var setLargetTitleDisplayModeCalled = false
+    var setLargeTitleDisplayModeCalled = false
     var setImageCalled = false
     var setTitleCalled = false
-    
+    var showShareOptionsCalled = false
+
     func set(largeTitleDisplayMode: LargeTitleDisplayMode) {
-        setLargetTitleDisplayModeCalled = true
+        setLargeTitleDisplayModeCalled = true
     }
     
     func set(image: String) {
@@ -111,13 +112,22 @@ class MockDetailViewProtocol: DetailViewProtocol {
     func set(title: String) {
         setTitleCalled = true
     }
+    
+    func showShareOptions() {
+        showShareOptionsCalled = true
+    }
 }
 
 class MockDetailViewPresenter: DetailViewPresenter {
     var viewReadyCalled = false
+    var shareTappedCalled = false
     
     override func viewReady() {
         viewReadyCalled = true
+    }
+    
+    override func shareTapped() {
+        shareTappedCalled = true
     }
 }
 

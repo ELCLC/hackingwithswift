@@ -17,6 +17,9 @@ class DetailViewPresenterTests: XCTestCase {
     override func setUp() {
         mockInteractor = MockInteractor()
         mockDetailViewProtocol = MockDetailViewProtocol()
+        
+        detailViewPresenter = DetailViewPresenter(interactor: mockInteractor, id: 10)
+        detailViewPresenter.view = mockDetailViewProtocol
     }
 
     override func tearDown() {
@@ -26,11 +29,9 @@ class DetailViewPresenterTests: XCTestCase {
     }
 
     func testDetailViewPresenter_viewReady_callsView() {
-        detailViewPresenter = DetailViewPresenter(interactor: mockInteractor, id: 10)
-        detailViewPresenter.view = mockDetailViewProtocol
         detailViewPresenter.viewReady()
         
-        XCTAssertTrue(mockDetailViewProtocol.setLargetTitleDisplayModeCalled)
+        XCTAssertTrue(mockDetailViewProtocol.setLargeTitleDisplayModeCalled)
         XCTAssertTrue(mockDetailViewProtocol.setTitleCalled)
         XCTAssertTrue(mockDetailViewProtocol.setImageCalled)
     }
@@ -40,8 +41,13 @@ class DetailViewPresenterTests: XCTestCase {
         detailViewPresenter.view = mockDetailViewProtocol
         detailViewPresenter.viewReady()
         
-        XCTAssertTrue(mockDetailViewProtocol.setLargetTitleDisplayModeCalled)
+        XCTAssertTrue(mockDetailViewProtocol.setLargeTitleDisplayModeCalled)
         XCTAssertFalse(mockDetailViewProtocol.setTitleCalled)
         XCTAssertFalse(mockDetailViewProtocol.setImageCalled)
+    }
+    
+    func testDetailViewPresenter_shareTapped_callsView() {
+        detailViewPresenter.shareTapped()
+        XCTAssertTrue(mockDetailViewProtocol.showShareOptionsCalled)
     }
 }

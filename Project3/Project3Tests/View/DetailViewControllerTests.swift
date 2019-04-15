@@ -35,7 +35,7 @@ class DetailViewControllerTests: XCTestCase {
         mockRouter = nil
     }
 
-    func testDetailVC_viewDidLoad_CallsPresenter() {
+    func testDetailVC_viewDidLoad_callsPresenter() {
         detailViewController.viewDidLoad()
         XCTAssertTrue(mockPresenter.viewReadyCalled)
     }
@@ -49,5 +49,10 @@ class DetailViewControllerTests: XCTestCase {
     func testDetailVC_setLargetTitleDisplayMode() {
         detailViewController.set(largeTitleDisplayMode: .always)
         XCTAssertTrue(detailViewController.navigationItem.largeTitleDisplayMode.rawValue == LargeTitleDisplayMode.always.rawValue)
+    }
+    
+    func testDetailVC_shareTapped_callsPresenter() {
+        detailViewController.shareTapped(detailViewController.shareButton)
+        XCTAssertTrue(mockPresenter.shareTappedCalled)
     }
 }

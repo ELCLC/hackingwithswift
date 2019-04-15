@@ -31,4 +31,8 @@ class DetailViewPresenter {
             view.set(title: "Image \(image.id + 1) of \(imageCount)")
         }
     }
+    
+    func shareTapped() {
+        view?.showShareOptions()
+    }
 }

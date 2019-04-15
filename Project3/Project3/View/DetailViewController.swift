@@ -12,11 +12,13 @@ protocol DetailViewProtocol: class {
     func set(largeTitleDisplayMode: LargeTitleDisplayMode)
     func set(image: String)
     func set(title: String)
+    func showShareOptions()
 }
 
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var shareButton: UIBarButtonItem!
     
     var presenter: DetailViewPresenter!
     var router: DetailViewRouter!
@@ -36,6 +38,10 @@ class DetailViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.hidesBarsOnTap = false
     }
+    
+    @IBAction func shareTapped(_ sender: Any) {
+        presenter.shareTapped()
+    }
 }
 
 extension DetailViewController: DetailViewProtocol {
@@ -49,5 +55,16 @@ extension DetailViewController: DetailViewProtocol {
     
     func set(title: String) {
         self.title = title
+    }
+    
+    func showShareOptions() {
+        guard let image = image.image?.jpegData(compressionQuality: 0.8) else {
+            print("No image found")
+            return
+        }
+        
+        let vc = UIActivityViewController(activityItems: [image], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
     }
 }
