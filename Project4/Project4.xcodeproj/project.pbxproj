@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F997B3122267135000A36069 /* WebsiteListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F997B3112267135000A36069 /* WebsiteListTableViewController.swift */; };
+		F997B3152267153D00A36069 /* WebsiteGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = F997B3142267153D00A36069 /* WebsiteGateway.swift */; };
+		F997B318226715BD00A36069 /* ListWebsitesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F997B317226715BD00A36069 /* ListWebsitesInteractor.swift */; };
+		F997B31B2267168B00A36069 /* ListWebsitesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F997B31A2267168B00A36069 /* ListWebsitesPresenter.swift */; };
 		F9B2C7C122649B4F004ADDB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B2C7C022649B4F004ADDB1 /* AppDelegate.swift */; };
 		F9B2C7C322649B4F004ADDB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B2C7C222649B4F004ADDB1 /* ViewController.swift */; };
 		F9B2C7C622649B4F004ADDB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B2C7C422649B4F004ADDB1 /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		F997B3112267135000A36069 /* WebsiteListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteListTableViewController.swift; sourceTree = "<group>"; };
+		F997B3142267153D00A36069 /* WebsiteGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteGateway.swift; sourceTree = "<group>"; };
+		F997B317226715BD00A36069 /* ListWebsitesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWebsitesInteractor.swift; sourceTree = "<group>"; };
+		F997B31A2267168B00A36069 /* ListWebsitesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWebsitesPresenter.swift; sourceTree = "<group>"; };
 		F9B2C7BD22649B4F004ADDB1 /* Project4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B2C7C022649B4F004ADDB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9B2C7C222649B4F004ADDB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +64,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F997B3132267152900A36069 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F997B3142267153D00A36069 /* WebsiteGateway.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F997B316226715AF00A36069 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F997B317226715BD00A36069 /* ListWebsitesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F997B3192267167E00A36069 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F997B31A2267168B00A36069 /* ListWebsitesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F997B31C2267172B00A36069 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F997B3112267135000A36069 /* WebsiteListTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F9B2C7B422649B4F004ADDB1 = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +117,16 @@
 		F9B2C7BF22649B4F004ADDB1 /* Project4 */ = {
 			isa = PBXGroup;
 			children = (
+				F997B31C2267172B00A36069 /* View */,
+				F997B3192267167E00A36069 /* Presenter */,
+				F997B316226715AF00A36069 /* Interactor */,
+				F997B3132267152900A36069 /* Entity */,
 				F9B2C7C022649B4F004ADDB1 /* AppDelegate.swift */,
 				F9B2C7C222649B4F004ADDB1 /* ViewController.swift */,
 				F9B2C7C422649B4F004ADDB1 /* Main.storyboard */,
 				F9B2C7C722649B50004ADDB1 /* Assets.xcassets */,
 				F9B2C7C922649B50004ADDB1 /* LaunchScreen.storyboard */,
 				F9B2C7CC22649B50004ADDB1 /* Info.plist */,
-				F997B3112267135000A36069 /* WebsiteListTableViewController.swift */,
 			);
 			path = Project4;
 			sourceTree = "<group>";
@@ -201,7 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F997B3122267135000A36069 /* WebsiteListTableViewController.swift in Sources */,
+				F997B318226715BD00A36069 /* ListWebsitesInteractor.swift in Sources */,
+				F997B31B2267168B00A36069 /* ListWebsitesPresenter.swift in Sources */,
 				F9B2C7C322649B4F004ADDB1 /* ViewController.swift in Sources */,
+				F997B3152267153D00A36069 /* WebsiteGateway.swift in Sources */,
 				F9B2C7C122649B4F004ADDB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
